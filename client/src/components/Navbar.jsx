@@ -13,7 +13,7 @@ const Navbar = () => {
           </div>
           <div className="impLinks p-1 flex space-x-14">
             <a>Sign In</a>
-            <a>FAQs</a>
+            <Link to="/Faq">FAQs</Link>
           </div>
         </div>
         <div className="navbar bg-black text-white flex items-center justify-between px-12 py-2">
@@ -21,13 +21,13 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-[200px]" />
           </Link>
           <div className="links flex space-x-12 tracking-[0.15rem] text-[1rem]">
-            <Link to="/">CATEGORIES</Link>
-            <Link to="/">BLOG</Link>
-            <Link to="/contact">CONTACT</Link>
+            <Link to="/Categories">CATEGORIES</Link>
+            <Link to="/Blog">BLOG</Link>
+            <Link to="/Contact">CONTACT</Link>
           </div>
           <div className="items flex space-x-8 tracking-[0.15rem] text-[1rem]">
-            <div>WISHLIST</div>
-            <div>CART</div>
+            <Link to="/Wishlist">WISHLIST</Link>
+            <Link to="/Cart">CART</Link>
           </div>
         </div>
       </div>
