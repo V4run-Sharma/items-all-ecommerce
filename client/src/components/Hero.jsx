@@ -24,7 +24,7 @@ const Hero = () => {
   }, [currentIndex]); // Re-run the effect when the currentIndex changes
 
   return (
-    <div className="carouselContainer bg-black min-h-[calc(85vh+1px)] border-t-2 flex flex-col">
+    <div className="carouselContainer bg-black min-h-[calc(85vh+1px)] border-t-2 border-gray-300 flex flex-col">
       <div className="carouselImgAndBtns flex justify-center">
         <div
           className="leftBtn w-3 h-20 rounded-full bg-white opacity-50 hover:opacity-100 transition-all mr-4 mt-[15.5rem] cursor-pointer"

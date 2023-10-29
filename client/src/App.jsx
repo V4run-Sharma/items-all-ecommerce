@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
 import Categories from "./components/Categories";
-import Blog from "./components/Blog";
 import Wishlist from "./components/Wishlist";
 import Cart from "./components/Cart";
 
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>

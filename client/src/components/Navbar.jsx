@@ -20,12 +20,9 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="logo" className="w-[200px]" />
           </Link>
-          <div className="links flex space-x-12 tracking-[0.15rem] text-[1rem]">
+          <div className="impLinks flex space-x-12 tracking-[0.15rem] text-[1rem]">
             <Link to="/Categories">CATEGORIES</Link>
-            <Link to="/Blog">BLOG</Link>
             <Link to="/Contact">CONTACT</Link>
-          </div>
-          <div className="items flex space-x-8 tracking-[0.15rem] text-[1rem]">
             <Link to="/Wishlist">WISHLIST</Link>
             <Link to="/Cart">CART</Link>
           </div>
