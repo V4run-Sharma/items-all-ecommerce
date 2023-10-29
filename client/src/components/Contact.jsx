@@ -7,10 +7,10 @@ const Contact = () => {
     navigator.clipboard.writeText("onlyphones@gmail.com");
   };
   const copyPhn = () => {
-    navigator.clipboard.writeText("+1 123 456 7890");
+    navigator.clipboard.writeText("+91 989 984 9898");
   };
   const copyAdd = () => {
-    navigator.clipboard.writeText("1234 Main St, New York, NY 10001");
+    navigator.clipboard.writeText("Saheliyon ki bari, Udaipur, Rajasthan");
   };
   const alertCopy1 = () => {
     const alert = document.querySelector(".p1");
@@ -42,14 +42,14 @@ const Contact = () => {
           <div className="faq text-2xl pt-20 pl-2">
             Have any questions? Read{" "}
             <Link to="/faq">
-              <strong>FAQs</strong>
+              <strong className="tracking-widest">FAQs</strong>
             </Link>
           </div>
         </div>
 
         <div className="infoText pr-36">
-          <div className="text-4xl font-bold">Email:</div>
-          <div className="email text-xl pt-1 pb-4 flex items-center">
+          <div className="text-4xl font-semibold">Email:</div>
+          <div className="email text-xl pt-1 pb-4 flex items-center tracking-[0.05rem]">
             onlyphones@gmail.com
             <div className="pl-4 cursor-pointer">
               <BiCopy
@@ -62,9 +62,9 @@ const Contact = () => {
             <p className="p1 pl-4 text-gray-500 opacity-0">Copied</p>
           </div>
 
-          <div className="text-4xl font-bold">Phone:</div>
-          <div className="phnno text-xl pt-1 pb-4 flex items-center">
-            +1 123 456 7890
+          <div className="text-4xl font-semibold">Phone:</div>
+          <div className="phnno text-xl pt-1 pb-4 flex items-center tracking-[0.05rem]">
+            +91 989 984 9898
             <div className="pl-4 cursor-pointer">
               <BiCopy
                 onClick={() => {
@@ -76,9 +76,9 @@ const Contact = () => {
             <p className="p2 pl-4 text-gray-500 opacity-0">Copied</p>
           </div>
 
-          <div className="text-4xl font-bold">Address:</div>
-          <div className="address text-xl pt-1 pb-4 flex items-center">
-            1234 Main St, New York, NY 10001
+          <div className="text-4xl font-semibold">Address:</div>
+          <div className="address text-xl pt-1 pb-4 flex items-center tracking-[0.05rem]">
+            Saheliyon ki bari, Udaipur, Rajasthan
             <div className="pl-4 cursor-pointer">
               <BiCopy
                 onClick={() => {

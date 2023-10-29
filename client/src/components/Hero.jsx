@@ -24,8 +24,8 @@ const Hero = () => {
   }, [currentIndex]); // Re-run the effect when the currentIndex changes
 
   return (
-    <div className="carouselContainer bg-black min-h-[calc(85vh+1px)] flex flex-col">
-      <div className="carouselImgAndBtns flex justify-center">
+    <div className="carouselContainer pt-8 bg-black min-h-[calc(85vh+1px)] flex flex-col">
+      <div className="carouselImgAndBtns flex justify-center ">
         <div
           className="leftBtn w-3 h-20 rounded-full bg-white opacity-50 hover:opacity-100 transition-all mr-4 mt-[15.5rem] cursor-pointer"
           onClick={() =>
@@ -39,26 +39,26 @@ const Hero = () => {
             key={index}
             src={image}
             alt={`carousel${index + 1}`}
-            className={`carouselImage h-[35rem] ${
+            className={`carouselImage h-[35rem] rounded-xl ${
               index === currentIndex ? "" : "hidden"
             }`}
           />
         ))}
 
         <div
-          className="righttn w-3 h-20 rounded-full bg-white opacity-50 hover:opacity-100 transition-all ml-4 mt-[15.5rem] cursor-pointer"
+          className="righBtn w-3 h-20 rounded-full bg-white opacity-50 hover:opacity-100 transition-all ml-4 mt-[15.5rem] cursor-pointer"
           onClick={nextSlide} // Call the nextSlide function to go to the next image
         ></div>
       </div>
 
-      <div className="carouselIndicators flex justify-center z-10 -mt-6 space-x-2">
+      <div className="carouselIndicators flex justify-center z-10 -mt-6 space-x-1">
         {images.map((_, index) => (
           <div
             key={index}
             className={`carouselIndicator cursor-pointer w-3 h-3 rounded-full bg-black transition-all ${
               index === currentIndex
                 ? ""
-                : "opacity-20 hover:bg-black hover:opacity-50"
+                : "opacity-20 w-6 hover:bg-black hover:opacity-50"
             }`} // Use opacity to show the current index
             onClick={() => setCurrentIndex(index)}
           ></div>

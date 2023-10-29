@@ -11,7 +11,7 @@ const Navbar = () => {
             Free Shipping.
             <span className="ml-2">14 Day return and refund guaranteed.</span>
           </div>
-          <div className="impLinks p-1 flex space-x-14">
+          <div className="impLinks p-1 flex space-x-[4.5rem]">
             <a>Sign In</a>
             <Link to="/Faq">FAQs</Link>
           </div>
