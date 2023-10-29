@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
     <>
-      <div className="container sticky top-0">
+      <div className="container sticky top-0 border-b-[1px] border-gray-300">
         <div className="prenavbar bg-gray-200 font-semibold px-12 flex justify-between">
           <div className="infoContainer p-1">
             Free Shipping.
@@ -16,15 +16,36 @@ const Navbar = () => {
             <Link to="/Faq">FAQs</Link>
           </div>
         </div>
-        <div className="navbar bg-black text-white flex items-center justify-between px-12 py-2">
+
+        <div className="navbar bg-black text-white flex items-center justify-between px-10 py-2 z-10">
           <Link to="/">
             <img src={logo} alt="logo" className="w-[200px]" />
           </Link>
-          <div className="impLinks flex space-x-12 tracking-[0.15rem] text-[1rem]">
-            <Link to="/Categories">CATEGORIES</Link>
-            <Link to="/Contact">CONTACT</Link>
-            <Link to="/Wishlist">WISHLIST</Link>
-            <Link to="/Cart">CART</Link>
+          <div className="impLinks w-fit px-2 flex justify-evenly space-x-12 tracking-[0.15rem] text-[1rem]">
+            <Link
+              className="transition-all hover:font-semibold hover:scale-110"
+              to="/Categories"
+            >
+              CATEGORIES
+            </Link>
+            <Link
+              className="transition-all hover:font-semibold hover:scale-110"
+              to="/Contact"
+            >
+              CONTACT
+            </Link>
+            <Link
+              className="transition-all hover:font-semibold hover:scale-110"
+              to="/Wishlist"
+            >
+              WISHLIST
+            </Link>
+            <Link
+              className="transition-all hover:font-semibold hover:scale-110"
+              to="/Cart"
+            >
+              CART
+            </Link>
           </div>
         </div>
       </div>

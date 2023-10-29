@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contactContainer bg-black text-white border-t-2 border-gray-300 min-h-[calc(85vh+1px)] flex items-center justify-around">
+      <div className="contactContainer bg-black text-white min-h-[calc(85vh+1px)] flex items-center justify-around">
         <div className="headingText pl-36 pb-8 flex flex-col">
           <div className="contact text-7xl font-bold ">Contact Us.</div>
           <div className="faq text-2xl pt-20 pl-2">

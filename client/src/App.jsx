@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
+import faqs from "./constants/FaqList";
 import Categories from "./components/Categories";
 import Wishlist from "./components/Wishlist";
 import Cart from "./components/Cart";
@@ -17,7 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/faq" element={<Faq faqs={faqs} />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
