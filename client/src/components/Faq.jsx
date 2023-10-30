@@ -1,6 +1,7 @@
 import React from "react";
+import faqs from "../constants/FaqList";
 
-const Faq = ({ faqs }) => {
+const Faq = () => {
   return (
     <div className="faqContainer min-h-[calc(85vh+1px)] bg-black px-32">
       <h1>Frequently Asked Questions</h1>

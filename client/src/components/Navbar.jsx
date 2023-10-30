@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <>
-      <div className="container sticky top-0 border-b-[1px] border-gray-300">
+      <div className="container sticky top-0 border-b-[1px] border-gray-300 z-50">
         <div className="prenavbar bg-gray-200 font-semibold px-12 flex justify-between">
           <div className="infoContainer p-1">
             Free Shipping.
@@ -17,7 +17,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="navbar bg-black text-white flex items-center justify-between px-10 py-2 z-10">
+        <div className="navbar bg-black text-white flex items-center justify-between px-10 py-2 z-50">
           <Link to="/">
             <img src={logo} alt="logo" className="w-[200px]" />
           </Link>
