@@ -7,7 +7,7 @@ const MidRangePhones = () => {
       {Phones.filter((phone) => phone.category === "mid-range").map((phone) => (
         <div
           key={phone.id}
-          className="phonecard max-h-80 text-white border-2 flex rounded-2xl border-gray-300 p-6 space-x-6 hover:scale-110 hover:border-white transition-all mr-16 mb-16"
+          className="phonecard max-h-80 text-white border-4 flex rounded-2xl border-gray-300 p-6 space-x-6 hover:scale-110 hover:border-white transition-all mr-16 mb-16"
         >
           <div className="tempImg border-2 rounded-2xl border-gray-300 px-16 py-32"></div>
           <div className="flex flex-col justify-between">
